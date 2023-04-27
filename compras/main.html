@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+
+    <style>
+        .check-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .check-list input {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Minha lista de compras</h1>
+        <hr>
+
+        <section class="check-list">
+            <label for="get-milk">
+                <input type="checkbox" name="milk" id="get-milk" checked>
+                Leite
+            </label>
+
+            <label for="get-eggs">
+                <input type="checkbox" name="eggs" id="get-eggs">
+                Ovos
+            </label>
+
+            <label for="get-sugar">
+                <input type="checkbox" name="sugar" id="get-sugar">
+                Açúcar
+            </label>
+            
+            <label for="get-flour">
+                <input type="checkbox" name="flour" id="get-flour">
+                Farinha
+            </label>
+        </section>
+    </main>
+</body>
+</html>
