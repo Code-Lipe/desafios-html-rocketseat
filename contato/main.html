@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+            text-align: center;
+        }
+
+        fieldset {
+            border-radius: 5px;
+            border: 1.5px solid black;
+        }
+        
+        legend {
+            font-size:1.5em;
+        }
+        
+        input, select, textarea, button {
+
+            border: 1.5px solid black;
+        }
+
+        .flex-div {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            padding: 10px 0px;
+            
+        }
+
+        .flex-div label {
+            font-weight: bold;
+        }
+
+        .flex-div input, select{
+            width: 40vh;
+            text-align: center;
+            margin: auto;
+        }
+
+        .message {
+            width: 40vh;
+            margin: auto;
+        }
+
+        .permission {
+            padding: 10px 0px;
+        }
+
+        button {
+            padding:10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="#" method="post" id="contact">
+            <fieldset>
+                <legend>Entre em contato</legend>
+                
+                <div class="subject flex-div">
+                    <label for="get-subject">Assunto:</label>
+
+                    <select name="get-subject" id="get-subject">
+                        <option value="support">Suporte</option>
+                        <option value="suggestion">Sugestão</option>
+                        <option value="complaint">Reclamação</option>
+                    </select>
+                </div>
+
+                <div class="name flex-div">
+                    <label for="get-name">Nome Completo:</label>
+                    <input type="text" name="get-name" placeholder="Seu nome" id="get-name">
+                </div>
+
+                <div class="email flex-div">
+                    <label for="get-email">E-mail:</label>
+                    <input type="email" name="get-email" placeholder="email@seudominio.com" id="get-email">
+                </div>
+
+                <div class="message flex-div">
+                    <label for="get-message">Mensagem:</label>
+                    <textarea name="get-message" id="" cols="30" rows="10" autocapitalize="words"></textarea>
+                </div>
+
+                <div class="permission">
+                    <label for="get-permission">
+                        <input type="checkbox" name="get-permission" id="get-permission">
+                        Aceito receber novidades por E-mail
+                    </label>
+                </div>
+
+                <div class="submit flex-div">
+                    <button type="submit">Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
